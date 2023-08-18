@@ -1,16 +1,13 @@
-import java.util.Scanner;
 
 public class Login {
     private Jogador[] jogadores;
     private int total;
 
-
-
     public Login(int tamMax) {
         jogadores = new Jogador[tamMax];
     }
 
-    public Jogador[] getJogadores () {
+    public Jogador[] getJogadores() {
         return jogadores;
     }
 
@@ -28,13 +25,14 @@ public class Login {
     }
 
     public void exibirJogadores() {
-        for(int i = 0; i < jogadores.length; i++) {
-            if(jogadores[i] != null) {
+        for (int i = 0; i < jogadores.length; i++) {
+            if (jogadores[i] != null) {
                 System.out.print(jogadores[i]);
-            }  else
-                System.out.print("|Jogador ainda não cadastrado| ");
-            }
+            } 
+        }
+
+        if (jogadores[0] == null) {
+            System.out.println("Nenhum jogador foi cadastrado no momento!");
         }
     }
-
-
+}

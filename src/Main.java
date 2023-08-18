@@ -12,13 +12,13 @@ public class Main {
         int escolhaLoop;
         int escolhaLogin;
 
-            System.out.println("Bem vido ao cadastramento de jogadores :)");
+        System.out.println("Bem vido ao cadastramento de jogadores :)");
         do {
 
             System.out.println("1-Cadastramento de jogador\n2-Exibir jogadores cadastrados");
             escolhaLogin = input.nextInt();
 
-            if(escolhaLogin == 1) {
+            if (escolhaLogin == 1) {
 
                 System.out.println("Digite o nome, a idade e a senha do jogador respectivamente: ");
 
@@ -36,7 +36,6 @@ public class Main {
             escolhaLoop = input.nextInt();
 
         } while (escolhaLoop == 1);
-
 
     }
 }
